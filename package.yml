@@ -1,0 +1,4 @@
+frontend:
+  url: https://github.com/smhs-os-project/cscheckin-fe/archive/refs/heads/master.zip
+sdk:
+  url: https://github.com/smhs-os-project/cscheckin-js-sdk/archive/refs/heads/master.zip
