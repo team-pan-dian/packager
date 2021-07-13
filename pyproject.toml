@@ -8,6 +8,7 @@ authors = ["Yi-Jyun Pan <pan93412@gmail.com>"]
 python = "^3.8"
 PyYAML = "^5.4.1"
 requests = "^2.25.1"
+httpx = "^0.18.2"
 
 [tool.poetry.dev-dependencies]
 
