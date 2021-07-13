@@ -36,7 +36,7 @@ jobs:
 
       - name: Copying file to /tmp
         run: |
-          cp package.zip /tmp/$(date +"pan-dian-%Y-%m-%d-%H-%M-%S").zip
+          cp package.zip /tmp/pkg.zip
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.4
@@ -44,5 +44,5 @@ jobs:
           # Artifact name
           name: zip package
           # A file, directory or wildcard pattern that describes what to upload
-          path: ./package.zip
+          path: /tmp/pkg.zip
           # The desired behavior if no files are found using the provided path.
