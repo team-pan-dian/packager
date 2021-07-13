@@ -34,6 +34,10 @@ jobs:
       - name: Start building the package
         run: poetry run python3 main.py
 
+      - name: Copying file to /tmp
+        run: |
+          cp package.zip /tmp/$(date +"pan-dian-%Y-%m-%d-%H-%M-%S").zip
+          
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
